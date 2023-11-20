@@ -1,0 +1,129 @@
+:root {
+    --textos: #9b9b9b;
+    --titulos: #2f2f2f;
+    --destaque: #D7AD41;
+    --destaque-2: #cea22b;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--textos);
+    padding-bottom: 8rem;
+}
+
+.btn-primary {
+    --bs-btn-bg: var(--destaque);
+    --bs-btn-border-color: var(--destaque);
+    --bs-btn-hover-bg: var(--destaque-2);
+    --bs-btn-hover-border-color: var(--destaque-2);
+    --bs-btn-focus-shadow-rgb: var(--destaque-2);
+    --bs-btn-active-bg: var(--destaque-2);
+    --bs-btn-active-border-color: var(--destaque-2);
+    --bs-btn-disabled-bg: var(--destaque);
+    --bs-btn-disabled-border-color: var(--destaque);
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#footer {
+    margin-top: auto;
+    padding: .5rem;
+    background-color: #ffffff;
+    box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#footer i {
+    font-size: 1.5rem;;
+    display: block;
+    margin: 0 auto .5rem;
+}
+
+#footer .nav {
+    --bs-nav-link-color: var(--textos);
+    --bs-nav-link-hover-color: var(--destaque);
+    --bs-nav-pills-link-active-color: var(--destaque);
+    --bs-nav-pills-link-active-bg: transparent;
+}
+
+.titulo {
+    color: var(--titulos);
+    font-size: 1.5rem;
+}
+
+.titulo-bloco {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.navegacao-conta {
+    max-width: 400px;
+}
+
+.navegacao-conta a {
+    text-decoration: none;
+    color: var(--textos);
+}
+
+.navegacao-conta li {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.navegacao-conta li .titulo {
+    font-size: 1.25rem;
+    fow-weight: 700;
+}
+
+.navegacao-conta i {
+    float: right;
+    position: absolute;
+    right: 1rem;
+    top: calc(50% - .75rem);
+}
+
+
+.titulo-pagina {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+.listagem img {
+    aspect-ratio: 1/1;
+    margin-bottom: 1rem;
+}
+
+.listagem .row>* {
+    margin-bottom: 1rem;
+}
+
+.navegacao-categoria li {
+    margin-bottom: .5rem;
+    border-bottom: 1px solid #eaeaea;
+    padding: .5rem;
+}
