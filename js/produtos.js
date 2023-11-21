@@ -44,7 +44,7 @@ let productElement = document.createElement('div');
 productElement.innerHTML = `
     <div class="row product mt-5">
         <div class="col-12 col-md-6">
-            <img src="${product.image}" alt=Imagem de "${product.name}" class="img-fluid w-100">
+            <img src="${product.image}" alt="Imagem de ${product.name}" class="img-fluid w-100">
         </div>
         <div class="col-12 col-md-6">
             <div class="row">
