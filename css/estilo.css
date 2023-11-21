@@ -122,8 +122,23 @@ a {
     margin-bottom: 1rem;
 }
 
+.listagem .active {
+    --bs-nav-pills-link-active-bg: var(--destaque);
+}
+
 .navegacao-categoria li {
     margin-bottom: .5rem;
     border-bottom: 1px solid #eaeaea;
     padding: .5rem;
+}
+
+
+
+/* login */
+.login form {
+    max-width: 400px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
