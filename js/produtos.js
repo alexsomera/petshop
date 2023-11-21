@@ -56,7 +56,7 @@ productElement.innerHTML = `
                 </div>
             </div>
             <p class="titulo">${product.description}</p>
-            <a href="/carrinho.html" class="btn btn-primary d-none d-md-block">Comprar</a>
+            <a href="carrinho.html" class="btn btn-primary d-none d-md-block">Comprar</a>
         </div>
     </div>
 
