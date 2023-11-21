@@ -146,8 +146,8 @@ a {
 
 /* produtos */
 
-.produto img,
-.servico img {
+.produto main img,
+.servico main img {
     margin-bottom: 2rem;
 }
 
