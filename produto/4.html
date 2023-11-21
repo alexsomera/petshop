@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetShop - Esqueci a Senha</title>
+    <title>PetShop - Produto</title>
     <link rel="stylesheet" href="/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/estilo.css">
 </head>
-<body class="login">
+
+<body class="produto">
     <header id="header">
         <div class="container">
             <div class="row">
-            <div class="col-12 text-center d-flex align-items-center justify-content-between">
+                <div class="col-12 text-center d-flex align-items-center justify-content-between">
                     <button class="btn" onclick="window.history.back()">
                         <i class="bi-chevron-left"></i>
                     </button>
@@ -20,25 +22,22 @@
                     <a href="/index.html">
                         <img src="/img/logo.png" alt="Logotipo PetShop">
                     </a>
-                    <button class="btn" >
+                    <button class="btn">
                         <i class="bi-search"></i>
                     </button>
                 </div>
             </div>
         </div>
     </header>
-    <main>
-    <!-- formulario para inserir o emeil e receber link de redefinição de senha -->
-    <form action="" method="post">
-        <div class="form-group">
-            <label for="email">Informe o e-mail que você utilizou para se cadastrar</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12" id="produto-4"></div>
         </div>
-        <input type="submit" class="btn btn-primary" value="Enviar link de redefinição de senha">
-        <a href="login.html">Lembrei a senha</a>
-        
-    </form>
     </main>
-    
+    <footer id="footer" class="p-3 d-md-none">
+        <a href="/carrinho.html" class="btn btn-primary d-block">Comprar</a>
+    </footer>
+    <script src="/js/produtos.js"></script>
 </body>
+
 </html>
