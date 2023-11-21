@@ -34,7 +34,7 @@ let products = [
 
 // determina o produto a ser exibido com base na uri
 let index = uri.split('/'); // quebra a uri em um array na /
-index = index[2].split('.'); // quebra o array na extensão do arquivo
+index = index[3].split('.'); // quebra o array na extensão do arquivo
 index = parseInt(index[0]); // converte o index para inteiro
 index = index - 1; // subtrai 1 do index para obter o produto correto
 
