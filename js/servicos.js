@@ -8,26 +8,26 @@ let products = [
         id: 1,
         name: "Tosa para pequeno porte",
         price: "11,90",
-        image: "../img/servico-1.png",
+        image: "servico-1.png",
         description: "Oferecemos um serviço de tosa dedicado e especializado para o seu amigo peludo no nosso PetShop. Nossa equipe apaixonada e treinada proporciona uma experiência de tosa tranquila e agradável, para deixar o pelo do seu pet em sua melhor forma."
     },
     {
         id: 2, name: "Banho para pequeno porte",
         price: "4,90",
-        image: "../img/servico-2.png",
+        image: "servico-2.png",
         description: "Oferecemos um serviço de banho dedicado e especializado para o seu amigo peludo no nosso PetShop. Nossa equipe apaixonada e treinada proporciona uma experiência de banho tranquila e agradável, utilizando produtos de alta qualidade e adaptados ao tipo de pelagem do seu pet."
     },
     {
         id: 3,
         name: "Banho para grande porte",
         price: "39,90",
-        image: "../img/servico-3.png",
+        image: "servico-3.png",
         description: "Oferecemos um serviço de banho dedicado e especializado para o seu amigo peludo no nosso PetShop. Nossa equipe apaixonada e treinada proporciona uma experiência de banho tranquila e agradável, utilizando produtos de alta qualidade e adaptados ao tipo de pelagem do seu pet."
     },
     {
         id: 4, name: "Tosa para grande porte",
         price: "11,90",
-        image: "../img/servico-4.png",
+        image: "servico-4.png",
         description: "Oferecemos um serviço de tosa dedicado e especializado para o seu amigo peludo no nosso PetShop. Nossa equipe apaixonada e treinada proporciona uma experiência de tosa tranquila e agradável, para deixar o pelo do seu pet em sua melhor forma."
     }
 ];
@@ -44,7 +44,7 @@ let productElement = document.createElement('div');
 productElement.innerHTML = `
     <div class="row product mt-5">
         <div class="col-12 col-md-6">
-            <img src="${product.image}" alt="Imagem de ${product.name}" class="img-fluid w-100">
+            <img src="../img/${product.image}" alt="Imagem de ${product.name}" class="img-fluid w-100">
         </div>
         <div class="col-12 col-md-6">
             <div class="row">
