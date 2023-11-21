@@ -146,8 +146,14 @@ a {
 
 /* produtos */
 
+.produto img,
+.servico img {
+    margin-bottom: 2rem;
+}
+
 .preco {
     color: var(--destaque);
     font-weight: 700;
     font-size: 1.25rem;
+    text-align: right;
 }
