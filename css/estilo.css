@@ -3,6 +3,7 @@
     --titulos: #2f2f2f;
     --destaque: #D7AD41;
     --destaque-2: #cea22b;
+    
 
 }
 
@@ -12,6 +13,12 @@ body {
     min-height: 100vh;
     color: var(--textos);
     padding-bottom: 8rem;
+}
+
+main .nav-pills {
+    --bs-nav-link-active-color: var(--destaque) !important;
+    --bs-nav-link-active-bg: transparent !important;
+    --bs-nav-pills-link-active-bg: var(--destaque) !important;
 }
 
 .btn-primary {
@@ -24,7 +31,7 @@ body {
     --bs-btn-active-border-color: var(--destaque-2);
     --bs-btn-disabled-bg: var(--destaque);
     --bs-btn-disabled-border-color: var(--destaque);
-
+    text-transform: uppercase;
 }
 
 a {
@@ -156,4 +163,18 @@ a {
     font-weight: 700;
     font-size: 1.25rem;
     text-align: right;
+}
+
+@media(max-width: 460px) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .nav-link {
+        padding: .5rem;
+    }
+
+    main .nav-link {
+        padding: .5rem 1rem;
+    }
 }

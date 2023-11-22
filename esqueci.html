@@ -29,16 +29,23 @@
         </div>
     </header>
     <main>
-    <!-- formulario para inserir o emeil e receber link de redefinição de senha -->
-    <form action="" method="post">
-        <div class="form-group">
-            <label for="email">Informe o e-mail que você utilizou para se cadastrar</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo titulo-pagina">Esqueci a senha</h2>
+                <p>Informe o e-mail utilizado no cadastro que enviaremos um link para a redefinição da sua senha.</p>
+                <!-- formulario para inserir o emeil e receber link de redefinição de senha -->
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="email">Informe o e-mail que você utilizou para se cadastrar</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Enviar link de redefinição de senha">
+                    <a href="login.html">Lembrei a senha</a>
+                    
+                </form>
+            </div>
         </div>
-        <input type="submit" class="btn btn-primary" value="Enviar link de redefinição de senha">
-        <a href="login.html">Lembrei a senha</a>
-        
-    </form>
     </main>
     
 </body>

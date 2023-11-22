@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body class="login">
     <header id="header">
         <div class="container">
             <div class="row">
-            <div class="col-12 text-center d-flex align-items-center justify-content-between">
+                <div class="col-12 text-center d-flex align-items-center justify-content-between">
                     <button class="btn" onclick="window.history.back()">
                         <i class="bi-chevron-left"></i>
                     </button>
@@ -21,7 +23,7 @@
                     <a href="index.html">
                         <img src="img/logo.png" alt="Logotipo PetShop">
                     </a>
-                    <button class="btn" >
+                    <button class="btn">
                         <i class="bi-search"></i>
                     </button>
                 </div>
@@ -29,23 +31,33 @@
         </div>
     </header>
     <main>
-    <!-- formulario de login com links para cadastro e esqueci a senha -->
-    <form action="" method="post">
-        <div class="form-group">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="titulo titulo-pagina">Acesse sua conta</h2>
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                    <form action="" method="post">
+                        <div class="form-group">
+
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" name="password" id="password" class="form-control"
+                                placeholder="Senha">
+                        </div>
+                        <input type="submit" class="btn btn-primary" value="Entrar">
+                        <a href="cadastro.html">Primeira vez aqui? Cadastre-se</a>
+                        <a href="esqueci.html">Esqueci a senha</a>
+
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="form-group">
-            <label for="password">Senha</label>
-        <input type="password" name="password" id="password" class="form-control" placeholder="Senha">
-        </div>
-        <input type="submit" class="btn btn-primary" value="Entrar">
-        <a href="cadastro.html">Primeira vez aqui? Cadastre-se</a>
-        <a href="esqueci.html">Esqueci a senha</a>
-        
-    </form>
+        <!-- formulario de login com links para cadastro e esqueci a senha -->
     </main>
-    
+
 </body>
+
 </html>

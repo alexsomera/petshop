@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Cadastro de Pet</title>
+    <link rel="icon" href="img/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="login">
+    <header id="header">
+        <div class="container">
+            <div class="row">
+            <div class="col-12 text-center d-flex align-items-center justify-content-between">
+                    <button class="btn" onclick="window.history.back()">
+                        <i class="bi-chevron-left"></i>
+                    </button>
+                    <h1 class="visually-hidden-focusable">PetShop</h1>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Logotipo PetShop">
+                    </a>
+                    <button class="btn" >
+                        <i class="bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+    <!-- formulario de cadastro de usuario e-commerce -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="titulo titulo-pagina">Cadastro de Pet </h2>
+
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" class="form-control" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block">Tipo</label>
+                        <label><input type="radio" name="tipo" id="gato">  Gato</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="tipo" id="cao">  Cão</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="raca">Raça</label>
+                        <input type="raca" name="raca" id="raca" class="form-control" placeholder="Raça">
+                    </div>
+                    <div class="form-group">
+                        <label for="temperamento">Temperamento</label>
+                        <input type="temperamento" name="temperamento" id="temperamento" class="form-control" placeholder="Temperamento">
+                    </div>
+                    <div class="form-group">
+                        <label class="d-block">Tamanho</label>
+                        <label><input type="radio" name="tamanho" id="gato">  Pequeno porte</label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <label><input type="radio" name="tamanho" id="cao">  Grande porte</label>
+                    </div>
+                    
+                    <a class="btn btn-primary" onclick="window.location.href = 'pets.html'">Concluir Cadastro</a>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer id="footer">
+        <nav>
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categorias.html">
+                        <i class="bi-list"></i>
+                        Categorias
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="racao-seca.html">
+                        <i class="bi-cart2"></i>
+                        Comprar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carrinho.html">
+                        <i class="bi-bag"></i>
+                        Carrinho
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="conta.html">
+                        <i class="bi-person"></i>
+                        Conta
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
