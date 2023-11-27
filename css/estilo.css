@@ -45,6 +45,23 @@ a {
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+#header nav {
+    margin-top: 1rem;
+}
+
+#header .nav-link {
+    --bs-nav-link-color: var(--textos);
+}
+
+#header .nav-link:focus, #header .nav-link:hover {
+    --bs-nav-link-hover-color: var(--destaque);
+}
+
+#header .nav-pills .nav-link.active, #header .nav-pills .show>.nav-link {
+    --bs-nav-pills-link-active-color: var(--destaque);
+    --bs-nav-pills-link-active-bg: transparent;
+}
+
 #footer {
     margin-top: auto;
     padding: .5rem;

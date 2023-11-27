@@ -13,6 +13,10 @@ function confirmaCompra() {
     `;
 };
 
+let btnNext = document.getElementById("nextItem");
+
+if (btnNext !== null) {
+
 
 
 function plusSlides(n) {
@@ -40,7 +44,6 @@ function exibeSlide(n) {
 }
 
 
-let btnNext = document.getElementById("nextItem");
 let slideAtual = 1;
 exibeSlides(slideAtual);
 
@@ -72,3 +75,14 @@ function exibeSlides(n) {
 setInterval(function () {
     nextItem.click();
 }, 5000);
+
+}
+
+let nav = document.querySelector("#footer nav");
+if (window.innerWidth > 992) {
+    document.querySelector("#footer nav").classList.add("d-none");
+    document.querySelector("#footer").classList.add("position-relative");
+    document.querySelector("body").classList.add("pb-0");
+    document.querySelector("#header").appendChild(nav);
+    document.querySelector("#header nav").classList.remove("d-none");
+}
