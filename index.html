@@ -29,13 +29,38 @@
         </div>
     </header>
     <main>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 p-0">
-                    <img src="img/banner.png" alt="Banner com foto de um cachorro e um gato" class="img-fluid w-100">
-                </div>
-            </div>
-        </div>
+
+
+
+<div class="slideshow-container">
+
+    <div class="slides fade">
+      <img src="img/banner.png" style="width:100%">
+      <div class="text">Banho e Tosa para seu peludo</div>
+    </div>
+    
+    <div class="slides fade">
+      <img src="img/banner-2.png" style="width:100%">
+      <div class="text">As melhores Rações</div>
+    </div>
+    
+    <div class="slides fade">
+      <img src="img/banner-3.png" style="width:100%">
+      <div class="text">O melhor para seu pet</div>
+    </div>
+    
+    <a class="prev" onclick="passaSlide(-1)">❮</a>
+    <a class="next" id="nextItem" onclick="passaSlide(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
         <!-- Listando as principais categorias -->
         <div class="container listagem">
             <section class="row">
@@ -182,6 +207,7 @@
             </ul>
         </nav>
     </footer>
+    
 </body>
 <script src="./js/script.js"></script>
 </html>
