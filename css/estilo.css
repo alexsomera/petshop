@@ -1,5 +1,5 @@
 :root {
-    --textos: #9b9b9b;
+    --textos: #5b5b5b;
     --titulos: #2f2f2f;
     --destaque: #D7AD41;
     --destaque-2: #cea22b;
@@ -177,4 +177,34 @@ a {
     main .nav-link {
         padding: .5rem 1rem;
     }
+}
+
+.agendamento {
+    position: fixed;
+    padding: 1rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    bacKground-color: #ffffff;
+    box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 1rem 1rem 0 0;
+}
+
+#confirmar:not(:checked)~.form-group {
+    display: none;
+}
+
+/* Carrinho */
+
+.input-carrinho .btn {
+    border-radius: 33px !important;
+    width: 33px;
+    color: var(--textos);
+    border: 1px solid #eee
+}
+
+.resumo p {
+    display: flex;
+    justify-content: space-between;
 }

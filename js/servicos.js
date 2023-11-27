@@ -55,11 +55,51 @@ productElement.innerHTML = `
                 </div>
             </div>
             <p class="titulo">${product.description}</p>
-            <a href="../carrinho.html" class="btn btn-primary d-none d-md-block">Agendar Serviço</a>
+            <a href="javascript:void(0)" onclick="abrirAgendamento()" class="btn btn-primary d-none d-md-block">Agendar Serviço</a>
         </div>
     </div>
+    <div class="row d-none agendamento">
+        <div class="col-12">
+            <div class="form-group">
+                <label for="data">Data ára a realização do serviço</label>
+                <input type="date" class="form-control" id="data" placeholder="Data">
+            </div>
+            <div class="form-group">
+                <label for="hora">Horário para a realização do serviço</label>
+                <input type="time" class="form-control" id="hora" placeholder="Horário">
+            </div>
+            <div class="form-group">
+                <label for="pet">Selecione o Pet</label>
+                <select class="form-control" id="pet">
+                    <option disabled selected>Selecione o Pet</option>
+                    <option>Simão</option>
+                    <option>Batista</option>
+                </select>
+                <a href="../pets.html">Seu pet não está na lista? Cadastrar</a>
+            </div>
+            <div class="form-group">
+                <label for="observacoes">Observações</label>
+                <textarea class="form-control" id="observacoes" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+
+                <input type="checkbox" id="confirmar" name="confirmar" value="confirmar">  Adicionar tele-busca ao serviço por R$ 29,90
+
+                <div class="form-group">
+                <label for="end-busca">Endereço para a tele-busca</label>
+                <input type="text" class="form-control" id="end-busca" placeholder="Endereço para a tele-busca">
+                </div>
+            </div>
+            <br>
+            <a href="../carrinho.html" class="btn btn-primary d-block">Confirmar Agendamento</a>
+        </div>
 
 `;
 // Injeta o servico na sua div
 let parent = document.getElementById("servico-" + (index + 1));
 parent.appendChild(productElement);
+
+function abrirAgendamento() {
+    let agendamento = document.querySelector(".agendamento");
+    agendamento.classList.toggle("d-none");
+}

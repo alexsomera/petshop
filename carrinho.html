@@ -13,7 +13,7 @@
     <header id="header">
         <div class="container">
             <div class="row">
-            <div class="col-12 text-center d-flex align-items-center justify-content-between">
+                <div class="col-12 text-center d-flex align-items-center justify-content-between">
                     <button class="btn" onclick="window.history.back()">
                         <i class="bi-chevron-left"></i>
                     </button>
@@ -31,7 +31,68 @@
     
     <main class="container py-5">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 d-flex flex-column justify-content-between" style="min-height: calc(100vh - 280px);">
+
+                <ul class="list-unstyled">
+
+                    <li class="card border-0 shadow mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/produto-4.png" alt="Ração Seca" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <h4 class="d-flex justify-content-between">
+                                        Ração Úmida Whiskas 
+                                        <span class="ml-auto d-inline-block"><i class="bi bi-trash"></i></span>
+                                    </h4>
+                                    <div class="row justify-content-between">
+                                        <div class="col-8">
+                                            <div class="input-group input-carrinho">
+                                                <button class="btn btn-outline-secondary rounded shadow bg-white font-weight-bold" type="button" id="button-addon1">-</button>
+                                                <input type="text" class="form-control text-center border-0" value="1" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                                <button class="btn btn-outline-secondary rounded shadow bg-white font-weight-bold" type="button" id="button-addon2">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-end">R$ 39,90</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="card border-0 shadow mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="img/produto-1.png" alt="Ração Seca" class="img-fluid">
+                                </div>
+                                <div class="col-9">
+                                    <h4 class="d-flex justify-content-between">
+                                        Ração Seca Friskies
+                                        <span class="ml-auto d-inline-block"><i class="bi bi-trash"></i></span>
+                                    </h4>
+                                    <div class="row justify-content-between">
+                                        <div class="col-8">
+                                            <div class="input-group input-carrinho">
+                                                <button class="btn btn-outline-secondary rounded shadow bg-white font-weight-bold" type="button" id="button-addon1">-</button>
+                                                <input type="text" class="form-control text-center border-0" value="1" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                                <button class="btn btn-outline-secondary rounded shadow bg-white font-weight-bold" type="button" id="button-addon2">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-end">R$ 39,90</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                   
+                </ul>
+                <div class="col-12 resumo">
+                    <p>Subtotal: <strong>R$ 159,90</strong></p>
+                    <a href="finalizado.html" class="btn btn-primary mt-auto d-block">Finalizar Compra</a>
+                </div>
+
+
                 
             </div>
         </div>

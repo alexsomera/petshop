@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop - Finalizar</title>
+    <link rel="icon" href="img/favicon.ico" sizes="32x32">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body class="categorias">
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center d-flex align-items-center justify-content-between">
+                    <button class="btn" onclick="window.history.back()">
+                        <i class="bi-chevron-left"></i>
+                    </button>
+                    <h1 class="visually-hidden-focusable">PetShop</h1>
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Logotipo PetShop">
+                    </a>
+                    <button class="btn" >
+                        <i class="bi-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="container py-5">
+        <div class="row" style="min-height: calc(100vh - 280px);">
+            <div class="col-12">
+                <h2 class="mb-4">Endereço de Entrega</h2>
+                <div class="card border-0 shadow mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="d-flex justify-content-between">
+                                    Nome Sobrenome
+                                    <a href="cadastro-endereco.html" class="ml-auto d-inline-block"><i class="bi bi-pencil"></i></a>
+                                </h4>
+                                <p class="mb-0">Rua da Alegria, 1866 - Apto 1205 CEP 00000-000 - Centro - São Paulo/SP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" >
+                <div class="card border-0 shadow mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="d-flex justify-content-between">
+                                    Forma de Pagamento
+                                    <span class="ml-auto d-inline-block"><i class="bi bi-pencil"></i></span>
+                                </h4>
+                                <p class="mb-0"><img src="img/cartao-credito.png"> **** **** **** 3947</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" >
+                <div class="card border-0 shadow mb-4">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="d-flex justify-content-between">
+                                    Forma de Entrega
+                                    <span class="ml-auto d-inline-block"><i class="bi bi-pencil"></i></span>
+                                </h4>
+                               <div class="d-flex">
+                                <img src="img/dhl.png">&nbsp;&nbsp;&nbsp;
+                                <img src="img/fedex.png">&nbsp;&nbsp;&nbsp;
+                                <img src="img/usps.png">
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-auto">
+                <div class="col-12 resumo">
+                    <p>Pedido: <strong>R$ 159,90</strong></p>
+                    <p>Entrega: <strong>R$ 25,90</strong></p>
+                    <p>Total: <strong>R$ 184,80</strong></p>
+                </div>
+                <a href="javascript:void(0)" onclick="confirmaCompra()" class="btn btn-primary mt-auto d-block">Pagar e Confirmar a Compra</a>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <nav>
+            <ul class="nav nav-pills justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="bi-house"></i>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="categorias.html">
+                        <i class="bi-list"></i>
+                        Categorias
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="racao-seca.html">
+                        <i class="bi-cart2"></i>
+                        Comprar
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="carrinho.html">
+                        <i class="bi-bag"></i>
+                        Carrinho
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="conta.html">
+                        <i class="bi-person"></i>
+                        Conta
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+</html>
